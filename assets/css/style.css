@@ -3,8 +3,9 @@
  }
 
 header {
-    height: 50px;
+    height: 75px;
     display: flex;
+    padding: 20px 10px 20px 10px;
     justify-content: space-between;
     border: solid darkolivegreen;
     background-color: darkolivegreen;
@@ -15,26 +16,17 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     background-color: gold;
-    border-right: 5px solid gold;
-    border-left: 5px solid gold;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-bottom: 5px;
 }
 
 ul li {
     display: inline-block;
-}
-
-section {
-    height: 360px;
-    background-image: url("../images/tennis\ bg.jpg"); alt: "tennis themed background";
-    background-position: left;
-    /* background-size: contain; */
+    padding: 5px 5px 0px 5px;
 }
 
 h2 {
@@ -42,6 +34,10 @@ h2 {
     justify-content: flex-end;
     align-items: center;
     font-size: xx-large;
+    color: darkgrey;
+    height: 360px;
+    background-image: url("../images/tennis\ bg.jpg"); alt: "tennis themed background";
+    background-position: left;
 }
 
 @media screen and (max-width: 768px) {
