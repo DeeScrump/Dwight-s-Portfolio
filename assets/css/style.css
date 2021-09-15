@@ -1,26 +1,32 @@
+:Root {
+    --trim: gold;
+    --bgcolor: darkolivegreen;
+    }
+
 * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
 
  img {
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
  }
 
 header {
     height: 75px;
+    font-weight: 1.5;
     display: flex;
     padding: 20px 10px 20px 10px;
     justify-content: space-between;
-    border: solid darkolivegreen;
-    background-color: darkolivegreen;
+    border: solid var(--bgcolor);
+    background-color: var(--bgcolor);
 }
 
 h1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: gold;
+    background-color: var(--trim);
 }
 
 nav {
@@ -45,26 +51,79 @@ h2 {
     background-position: left;
 }
 
-.work {
-        display: grid;
-        flex-direction: column;
-        justify-content: space-between;
-        background-size: 50%;
-
-}
-
-.work header {
-    position: relative;
-    margin: -20px;
-}
-
-.card,.cardlarge {
+.aboutme,
+.work,
+.contact {
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
-    width: 250px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-  }
+}
+
+h3,
+h4 {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    border-right: solid var(--trim);
+    padding-right: 10px;
+}
+
+.aboutme section {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .work {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+} */
+
+main {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    flex-wrap: wrap; */
+    /* width: 100%; */
+}
+
+.cardlarge {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    padding: 2.5%;
+}
+
+.cardhead {
+    position: absolute;
+    display: flex;
+    top: 10%;
+    left: 2.5%;
+}
+
+.card {
+    width: 40%;
+    height: 20%;
+    flex: 1 0 auto;
+    position: relative;
+}
+
+.card ol li {
+    display :inline-flex;
+    justify-content: end;
+    padding: 10px 20px 10px 20px;
+}
+
+.contact section {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 @media screen and (max-width: 768px) {
     header {
