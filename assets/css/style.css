@@ -1,0 +1,57 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: solid darkolivegreen;
+    background-color: darkolivegreen;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: gold;
+    border-right: 5px solid gold;
+    border-left: 5px solid gold;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+section {
+    height: 360px;
+    background-image: url("../images/tennis\ bg.jpg"); alt: "tennis themed background";
+    background-position: left;
+    /* background-size: contain; */
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        flex-direction: column;
+    }
+}
