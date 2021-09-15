@@ -2,6 +2,11 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
 
+ img {
+    height: 200px;
+    width: 200px;
+ }
+
 header {
     height: 75px;
     display: flex;
@@ -39,6 +44,27 @@ h2 {
     background-image: url("../images/tennis\ bg.jpg"); alt: "tennis themed background";
     background-position: left;
 }
+
+.work {
+        display: grid;
+        flex-direction: column;
+        justify-content: space-between;
+        background-size: 50%;
+
+}
+
+.work header {
+    position: relative;
+    margin: -20px;
+}
+
+.card,.cardlarge {
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
 
 @media screen and (max-width: 768px) {
     header {
