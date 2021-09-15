@@ -19,11 +19,10 @@
  }
 
 .headmain {
-    height: auto;
-    font-weight: 1.5;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1%;
     border: solid white;
     background-color: var(--bgcolor);
 }
@@ -31,23 +30,16 @@
 h1 {
     display: flex;
     flex: 1 0 25%;
-    /* justify-content: center; */
-    flex-direction: column;
-    background-color: var(--trim);
-    border: solid black;
 }
 
-/* nav {
-    align-items: flex-end;
-    border: solid purple;
-
-} */
+h1 img {
+    padding-left: 1%;
+}
 
 ul li {
     display: inline-block;
     vertical-align: bottom;
     padding: 0px 5px 0px 5px;
-    border: solid   orange;
 }
 
 h2 {
@@ -76,7 +68,6 @@ h4 {
     font-size: xx-large;
     flex-wrap: wrap;
     justify-content: flex-end;
-    /* align-content: center; */
     border-right: solid var(--trim);
     padding-right: 10px;
 }
@@ -88,18 +79,19 @@ h4 {
     padding: 5px;
 }
 
-/* .work {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-} */
-
 main {
     width: 75%;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
     padding: 5px;
+}
+
+.card:hover,
+.cardlarge:hover {
+    box-shadow: 10px 5px 5px palegreen;
+    filter: alpha(opacity=80);
+    opacity: .8; 
 }
 
 .cardlarge {
@@ -115,6 +107,7 @@ main {
     display: flex;
     top: 10%;
     left: 2.5%;
+    background-color: var(--trim);
 }
 
 .card {
@@ -141,11 +134,9 @@ ol li {
     margin: none;
 }
 
-
-
 @media screen and (max-width: 768px) {
-    header {
-      flex-direction: none;
+    .mainhead {
+      background-color: var(--trim);
     }
 }
 
