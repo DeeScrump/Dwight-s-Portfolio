@@ -1,10 +1,16 @@
 :Root {
     --trim: gold;
     --bgcolor: darkolivegreen;
+    --border: lime;
     }
 
 * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ #selfie {
+    height: 10%;
+    width: 10%;
  }
 
  img {
@@ -12,32 +18,36 @@
     width: 100%;
  }
 
-header {
-    height: 75px;
+.headmain {
+    height: auto;
     font-weight: 1.5;
     display: flex;
-    padding: 20px 10px 20px 10px;
     justify-content: space-between;
-    border: solid var(--bgcolor);
+    align-items: center;
+    border: solid white;
     background-color: var(--bgcolor);
 }
 
 h1 {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex: 1 0 25%;
+    /* justify-content: center; */
+    flex-direction: column;
     background-color: var(--trim);
+    border: solid black;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
+/* nav {
     align-items: flex-end;
-}
+    border: solid purple;
+
+} */
 
 ul li {
     display: inline-block;
-    padding: 5px 5px 0px 5px;
+    vertical-align: bottom;
+    padding: 0px 5px 0px 5px;
+    border: solid   orange;
 }
 
 h2 {
@@ -63,9 +73,10 @@ h3,
 h4 {
     width: 25%;
     display: flex;
+    font-size: xx-large;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-content: center;
+    /* align-content: center; */
     border-right: solid var(--trim);
     padding-right: 10px;
 }
@@ -74,6 +85,7 @@ h4 {
     width: 75%;
     display: flex;
     flex-wrap: wrap;
+    padding: 5px;
 }
 
 /* .work {
@@ -85,17 +97,17 @@ h4 {
 main {
     width: 75%;
     display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    /* display: grid;
-    flex-wrap: wrap; */
-    /* width: 100%; */
+    padding: 5px;
 }
 
 .cardlarge {
     width: 100%;
-    height: 40%;
+    height: 45%;
     position: relative;
-    padding: 2.5%;
+    border: 3px solid var(--border);
+    margin: 5px;
 }
 
 .cardhead {
@@ -110,17 +122,23 @@ main {
     height: 20%;
     flex: 1 0 auto;
     position: relative;
+    margin: 5px;
+    border: 3px solid var(--border);
 }
 
-.card ol li {
+ol li {
     display :inline-flex;
     justify-content: end;
     padding: 10px 20px 10px 20px;
 }
 
 .contact section {
-    display: flex;
-    justify-content: space-between;
+    width: 40%;
+    height: 20%;
+    flex: 1 0 auto;
+    position: relative;
+    padding: 2.5%;
+    margin: none;
 }
 
 
@@ -132,7 +150,8 @@ main {
 }
 
 @media screen and (max-width: 992px) {
-    nav {
+    .card {
+        flex-wrap: wrap;
         flex-direction: column;
     }
 }
