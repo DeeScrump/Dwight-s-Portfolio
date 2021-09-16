@@ -31,11 +31,6 @@
     background-color: var(--bgcolor);
 }
 
-/* h1 {
-    display: flex;
-    flex: 1 0 25%;
-} */
-
 h1 img {
     padding-left: 1%;
 }
@@ -79,13 +74,7 @@ h4 {
     padding-right: 10px;
 }
 
-/* .aboutme section {
-    width: 75%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-} */
-
+/* Set the about me and main sections as flexbox style with following parameters */
 main,
 .aboutme section {
     width: 75%;
@@ -95,27 +84,13 @@ main,
     padding: 5px;
 }
 
-.card:hover,
-.cardlarge:hover {
-    box-shadow: 10px 5px 5px palegreen;
-    filter: alpha(opacity=80);
-    opacity: .8; 
-}
-
+/* Created large card for 1st work and 2nd card for remaining. Each card made relative */
 .cardlarge {
     width: 100%;
     height: 45%;
     position: relative;
     border: 3px solid var(--border);
     margin: 5px;
-}
-
-.cardhead {
-    position: absolute;
-    display: flex;
-    top: 10%;
-    left: 2.5%;
-    background-color: var(--trim);
 }
 
 .card {
@@ -127,31 +102,42 @@ main,
     border: 3px solid var(--border);
 }
 
+/* header card to be placed in each work content section, absolute to the relative card itself */
+.cardhead {
+    position: absolute;
+    display: flex;
+    top: 10%;
+    left: 2.5%;
+    background-color: var(--trim);
+}
+
+/* created pseudo properties to add box shadows and highlight cards as the mouse hovers */
+.card:hover,
+.cardlarge:hover {
+    box-shadow: 10px 5px 5px var(--trim);
+    filter: alpha(opacity=80);
+    opacity: .8; 
+}
+
+/* displayed contact section information in light */
 ol li {
     display :inline-flex;
-    justify-content: end;
     padding: 10px 20px 10px 20px;
 }
 
-.contact section {
-    width: 40%;
-    height: 20%;
-    flex: 1 0 auto;
-    position: relative;
+.contact {
     padding: 2.5%;
-    margin: none;
 }
 
-@media screen and (max-width: 992px) {
-    /* ul li {
+/* Only set different parameters for the nav and contact content sections when screen width is less than 768px */
+@media screen and (max-width: 768px) {
+    ul li {
         display: flex;
         flex-direction: column;
         padding: 10px;
-    } */
-}
+    }
 
-@media screen and (max-width: 768px) {
-    ul li {
+    ol li {
         display: flex;
         flex-direction: column;
         padding: 10px;
