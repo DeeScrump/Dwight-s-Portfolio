@@ -76,7 +76,8 @@ h4 {
 
 /* Set the about me and main sections as flexbox style with following parameters */
 main,
-.aboutme section {
+.aboutme section,
+.contact section {
     width: 75%;
     display: flex;
     align-content: center;
@@ -119,14 +120,10 @@ main,
     opacity: .8; 
 }
 
-/* displayed contact section information in light */
+/* displayed contact section information in-line */
 ol li {
     display :inline-flex;
     padding: 10px 20px 10px 20px;
-}
-
-.contact {
-    padding: 2.5%;
 }
 
 /* Only set different parameters for the nav and contact content sections when screen width is less than 768px */
