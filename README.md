@@ -21,4 +21,4 @@ The user will find that all items adjust to various size windows, some times adj
 
 # Deployment URLs are Below:
 1. Website: https://github.com/DeeScrump/Dwight-s-Portfolio.git
-2. Repository Link: 
+2. Repository Link: https://deescrump.github.io/Dwight-s-Portfolio/
