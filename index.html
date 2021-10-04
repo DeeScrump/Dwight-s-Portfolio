@@ -7,28 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
     <title>Dwight Kornbluth II's Portfolio</title>
 </head>
 
 <body>
-    <header class="headmain">
-        <h1>Dwight C Kornbluth II
-            <img id="selfie" src="./assets/images/headshot.jpg" alt="Self Photo">
-        </h1>
+    <header class="d-flex flew-row jutify-content-between bgGradient">
+        
+        <div class="navbar d-flex flew-row">
 
-        <nav>
-            <ul>
+              <a class="navbar-brand" href="#about_me">
+                <img id='selfie' src="./assets/images/headshot.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>
+              <p class="h1 text-capitalize">Dwight C Kornbluth II</p>
+
+        </div>
+
+        <div class="navbar d-flex flew-row">
+            <ul class="bg-dark">
                 <li><a href="#about_me">About Me</a></li>
                 <li><a href="#work_history">Work</a></li>
                 <li><a href="#contact_me">Contact Me</a></li>
                 <li><a href="./assets/images/resume.pdf">Resume</a></li>
             </ul>
-        </nav>
+        </div>
 
     </header>
 
-    <div>
-        <h2>The Body Of Work Grows</h2>
+    <div class="bg-dark">
+        <h2 class="bg-dark">The Body Of Work Grows</h2>
     </div>
 
     <div class="aboutme">
@@ -49,9 +56,9 @@
         <h4><a id="work_history" href="#person_fam" style="text-decoration: none">Work</a></h4>
         <main>
             <section class="cardlarge">
-                <header class="cardhead"><a id="person_fam">Person Family</a></header>
-                <a href="https://www.facebook.com/edgarmadgie.harris" alt="EdgarMadgie Family Reunion Site">
-                <img src="./assets/images/family.jpg" alt="Family Reunion"/></a>
+                <header class="cardhead"><a id="person_fam">S3- Server Side Station</a></header>
+                <a href="https://joshtlil.github.io/project-one/" alt="Server Side Station">
+                <img src="./assets/images/s3.png" alt="Family Reunion"/></a>
             </section>
 
             <section class="card">
@@ -92,7 +99,7 @@
                     <a href="#email" alt="Email">dwight.kornbluth@gmail.com</a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/flgalicensedproducer" alt="Link to Facebook">Facebook</a>
+                    <a href="https://www.facebook.com/flgalicensedproducer" alt="Link to Facebook">Github</a>
                 </li>
                 <li>
                     <a href="https://my.indeed.com/p/dwightk-zuz0jhm" alt="Link to Indeed">Indeed</a>
@@ -111,6 +118,10 @@
     <footer>
         <p>© 2021 DeeJose Travels, Inc.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

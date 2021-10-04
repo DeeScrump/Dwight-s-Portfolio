@@ -16,6 +16,10 @@
     width: 152.8px;
  }
 
+.bgGradient {
+    background-image: linear-gradient(to top, darkolivegreen, yellow);
+}
+
  img {
     height: 100%;
     width: 100%;
