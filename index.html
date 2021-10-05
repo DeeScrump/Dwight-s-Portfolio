@@ -13,107 +13,124 @@
 </head>
 
 <body>
-    <header class="d-flex flew-row jutify-content-between bgGradient">
-        
-        <div class="navbar d-flex flew-row">
+    <nav class="bg-success">
 
-              <a class="navbar-brand" href="#about_me">
-                <img id='selfie' src="./assets/images/headshot.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>
-              <p class="h1 text-capitalize">Dwight C Kornbluth II</p>
-
+        <div class="bg-light">
+            <a href="#about_me">
+                <img style="width:20%" src="./assets/images/headshot.jpg" alt="Headshot">
+            </a>
+            <h1>Dwight C Kornbluth II</h1>
         </div>
 
-        <div class="navbar d-flex flew-row">
-            <ul class="bg-dark">
-                <li><a href="#about_me">About Me</a></li>
-                <li><a href="#work_history">Work</a></li>
-                <li><a href="#contact_me">Contact Me</a></li>
-                <li><a href="./assets/images/resume.pdf">Resume</a></li>
-            </ul>
+        <div class="d-inline-flex">
+            <div><a href="#about_me">About Me</a></div>
+            <div><a href="#work_history">Work</a></div>
+            <div><a href="#contact_me">Contact Me</a></div>
+            <div><a href="./assets/images/resume.pdf">Resume</a></div>
         </div>
+    </nav>
 
-    </header>
-
-    <div class="bg-dark">
-        <h2 class="bg-dark">The Body Of Work Grows</h2>
+    <div>
+        <h2 class="bgImage">The Body Of Work Grows</h2>
     </div>
 
-    <div class="aboutme">
-        <h3><a id="about_me">About Me</a></h3>
-        <section>
-            <p>
-                Thank you for visiting my page.  I am a new web developer and have put together this website as a portfolio of my works so that you may pass your judgement upon me.
-            
-                Keep in mind that I am an Electrical Engineer from the University of Florida, and have spent the last 8 years in upper management in Corporate America when I decided to revisit my roots, and get back into Computer Information and Sciences through Georgia Tech's BootCamp.
-            
-                I am 38 years old, just relocated to Tucker, GA from South Florida.  I am married with two adopted kids.  Clearly, I love to play tennis!
-            </p>
-        </section>
-    </div>    
+    <div class="row aboutme pb-4">
+        <div class="col-lg-2 position-relative border-end border-success border-4">
+            <div class="card-body position-absolute end-0" style="height:100%">
+                <div class="card-body">
+                    <h4><a  id="about_me">About Me</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <div class="card-body">
+                <div>
+                    <p>
+                        Thank you for visiting my page.  I am a new web developer and have put together this website as a portfolio of my works so that you may pass your judgement upon me.
+                    
+                        Keep in mind that I am an Electrical Engineer from the University of Florida, and have spent the last 8 years in upper management in Corporate America when I decided to revisit my roots, and get back into Computer Information and Sciences through Georgia Tech's BootCamp.
+                    
+                        I am 38 years old, just relocated to Tucker, GA from South Florida.  I am married with two adopted kids.  Clearly, I love to play tennis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
    
-    <div class="work">
-        
-        <h4><a id="work_history" href="#person_fam" style="text-decoration: none">Work</a></h4>
-        <main>
-            <section class="cardlarge">
-                <header class="cardhead"><a id="person_fam">S3- Server Side Station</a></header>
-                <a href="https://joshtlil.github.io/project-one/" alt="Server Side Station">
-                <img src="./assets/images/s3.png" alt="Family Reunion"/></a>
-            </section>
+    <div class="row work pb-4">
+        <div class="col-lg-2 position-relative border-end border-success border-4">
+            <div class="card-body position-absolute end-0" style="height:100%">
+                <div class="card-body">
+                    <h4><a id="work_history" href="#person_fam" style="text-decoration: none">Work</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <div class="card-body serverSide">
+                <div class="bg-dark serverSide">
+                    <div><a id="person_fam">S3- Server Side Station</a></div>
+                    <div><a href="https://joshtlil.github.io/project-one/" alt="Server Side Station">
+                    <img class="card-img serverSide" src="./assets/images/serversidestation.png" alt="S3 Landing Page"/></a></div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-lg-5">
+                    <div class="card flex-md-fill">
+                        <header class="cardhead">Bowling</header>
+                        <a href="http://membership.tnbainc.org/" alt="TNBA Site">
+                        <img class="card-img" src="./assets/images/tnba.jpg" alt="TNBA"/></a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card flex-md-fill">
+                        <header class="cardhead">Tennis Tournaments</header>
+                        <a href="https://glta.net/" alt="GLTA Tour Site">
+                        <img class="card-img" src="./assets/images/glta.jpg" alt="GLTA"/></a>
+                    </div>
+                </div>
+            </div>
 
-            <section class="card">
-                <header class="cardhead">Bowling</header>
-                <a href="http://membership.tnbainc.org/" alt="TNBA Site">
-                <img src="./assets/images/tnba.jpg" alt="TNBA"/></a>
-            </section>
-
-            <section class="card">
-                <header class="cardhead">Tennis Tournaments</header>
-                <a href="https://glta.net/" alt="GLTA Tour Site">
-                <img src="./assets/images/glta.jpg" alt="GLTA"/></a>
-            </section>
-                       
-            <section class="card">
-                <header class="cardhead">Brother's Restaurant</header>
-                <a href="https://www.facebook.com/nowthatsawrap2016/" alt="Now That's a Wrap">
-                <img src="./assets/images/nowwrap.jpg" alt="Now That's A Wrap"/></a>
-            </section>
-            
-            <section class="card">
-                <header class="cardhead">Traveling</header>
-                <a href="https://en.wikipedia.org/wiki/Rio_de_Janeiro#/media/File:Rio_De_Janeiro_-_Rafael_Defavari.jpg" alt="Rio Site Wiki">
-                <img src="./assets/images/rio.jpg" alt="Travel"/></a>
-            </section>
-        </main>
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-lg-5">
+                    <div class="card flex-md-fill">
+                        <header class="cardhead">Brother's Restaurant</header>
+                        <a href="https://www.facebook.com/nowthatsawrap2016/" alt="Now That's a Wrap">
+                        <img class="card-img" src="./assets/images/nowwrap.jpg" alt="Now That's A Wrap"/></a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card flex-md-fill">
+                        <header class="cardhead">Traveling</header>
+                        <a href="https://en.wikipedia.org/wiki/Rio_de_Janeiro#/media/File:Rio_De_Janeiro_-_Rafael_Defavari.jpg" alt="Rio Site Wiki">
+                        <img class="card-img" src="./assets/images/rio.jpg" alt="Travel"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="contact">
-        <h3><a id="contact_me">Contact Me</a></h3>
-
-        <section>
-            <ol>
-                <li>
+    <div class="row contactme pb-4">
+        <div class="col-lg-2 position-relative border-end border-success border-4">
+            <div class="card-body position-absolute end-0" style="height:100%">
+                <div class="card-body">
+                    <h4><a id="contact_me">Contact Me</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <div class="card-body">
+                <div class="card-body d-flex justify-content-evenly">
                     <a href="#352-871-4481" alt="Mobile Number">352-871-4481</a>
-                </li>
-                <li>
                     <a href="#email" alt="Email">dwight.kornbluth@gmail.com</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/flgalicensedproducer" alt="Link to Facebook">Github</a>
-                </li>
-                <li>
+                    <a href="https://github.com/DeeScrump" alt="Link to Github Repositories">Github</a>
                     <a href="https://my.indeed.com/p/dwightk-zuz0jhm" alt="Link to Indeed">Indeed</a>
-                </li>
-                <li>
                     <a href="https://www.linkedin.com/in/dwight-c-kornbluth-ii/" alt="Link to LinkedIn">LinkedIn</a>
-                </li>
-                <li>
                     <a href="https://www.instagram.com/flga.agent.lifehealth.realtor/" alt="Link to Instagram">Instagram</a>
-                </li>
-            </ol>
-        </section>
+                </div>
+            </div>
+        </div>
     </div>
-    </main>
 
     <footer>
         <p>© 2021 DeeJose Travels, Inc.</p>

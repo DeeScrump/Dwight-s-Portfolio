@@ -3,30 +3,54 @@
     --trim: gold;
     --bgcolor: darkolivegreen;
     --border: lime;
-    }
+}
 
+
+/* Flexes h2 headers over repeating background image*/
+.bgImage {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: xx-large;
+    color: darkgrey;
+    height: 360px;
+    background-image: url("../images/tennis\ bg.jpg"); alt: "tennis themed background";
+    background-position: left;
+}
+
+/* Displays nav links inline */
+ul li {
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+}
+
+img {
+    max-width: 100rem;
+}
+
+.serverSide {
+    max-width: 100%;
+    max-height: 200rem;
+}
+/*
 /* Set a default font for site */
-* {
+/* {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
 
  /* Resized images */
- #selfie {
+ /*#selfie {
     height: 153.3px;
     width: 152.8px;
  }
 
-.bgGradient {
-    background-image: linear-gradient(to top, darkolivegreen, yellow);
-}
-
  img {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: ;
  }
 
 /* Set main header to flex */
-.headmain {
+/*.headmain {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,26 +63,12 @@ h1 img {
     padding-left: 1%;
 }
 
-/* Displays nav links inline */
-ul li {
-    display: inline-block;
-    padding: 0px 5px 0px 5px;
-}
 
-/* Flexes h2 headers over repeating background image*/
-h2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: xx-large;
-    color: darkgrey;
-    height: 360px;
-    background-image: url("../images/tennis\ bg.jpg"); alt: "tennis themed background";
-    background-position: left;
-}
+
+
 
 /* sets each of the subsections of main to flex space between */
-.aboutme,
+/*.aboutme,
 .work,
 .contact {
     display: flex;
@@ -67,7 +77,7 @@ h2 {
 }
 
 /* sets boundaries for left navigation */
-h3,
+/*h3,
 h4 {
     width: 25%;
     font-size: xx-large;
@@ -79,7 +89,7 @@ h4 {
 }
 
 /* Set the about me and main sections as flexbox style with following parameters */
-main,
+/*main,
 .aboutme section,
 .contact section {
     width: 75%;
@@ -90,7 +100,7 @@ main,
 }
 
 /* Created large card for 1st work and 2nd card for remaining. Each card made relative */
-.cardlarge {
+/*.cardlarge {
     width: 100%;
     height: 45%;
     position: relative;
@@ -108,7 +118,7 @@ main,
 }
 
 /* header card to be placed in each work content section, absolute to the relative card itself */
-.cardhead {
+/*.cardhead {
     position: absolute;
     display: flex;
     top: 10%;
@@ -117,7 +127,7 @@ main,
 }
 
 /* created pseudo properties to add box shadows and highlight cards as the mouse hovers */
-.card:hover,
+/*.card:hover,
 .cardlarge:hover {
     box-shadow: 10px 5px 5px var(--trim);
     filter: alpha(opacity=80);
@@ -125,12 +135,13 @@ main,
 }
 
 /* displayed contact section information in-line */
-ol li {
+/*ol li {
     display :inline-flex;
     padding: 10px 20px 10px 20px;
 }
 
 /* Only set different parameters for the nav and contact content sections when screen width is less than 768px */
+
 @media screen and (max-width: 768px) {
     ul li {
         display: flex;
