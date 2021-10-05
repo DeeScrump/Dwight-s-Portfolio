@@ -18,7 +18,7 @@ The user will find that all items adjust to various size windows, some times adj
 
 ## Screenshot of Web Landing Page
 ![Image for Landing Page for Portfolio.](./assets/images/screenshot.png)
-
+![Image for Landing Page for Portfolio Updated.](./assets/images/screenshot2.png)
 # Deployment URLs are Below:
 1. Repository: https://github.com/DeeScrump/Dwight-s-Portfolio.git
 2. Website: https://deescrump.github.io/Dwight-s-Portfolio/
