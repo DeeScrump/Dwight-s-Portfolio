@@ -19,19 +19,19 @@
 }
 
 /* Displays nav links inline */
-ul li {
+/* ul li {
     display: inline-block;
     padding: 0px 5px 0px 5px;
-}
+} */
 
 img {
-    max-width: 100rem;
+    max-width: 20rem;
 }
 
-.serverSide {
+/* .serverSide {
     max-width: 100%;
     max-height: 200rem;
-}
+} */
 /*
 /* Set a default font for site */
 /* {
@@ -50,21 +50,14 @@ img {
  }
 
 /* Set main header to flex */
-/*.headmain {
-    display: flex;
+.headmain {
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    border: var(--bgcolor);
+    border: var(--bgcolor); */
     background-color: var(--bgcolor);
 }
-
-h1 img {
-    padding-left: 1%;
-}
-
-
-
 
 
 /* sets each of the subsections of main to flex space between */
@@ -142,7 +135,7 @@ h4 {
 
 /* Only set different parameters for the nav and contact content sections when screen width is less than 768px */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     ul li {
         display: flex;
         flex-direction: column;
@@ -154,5 +147,5 @@ h4 {
         flex-direction: column;
         padding: 10px;
     }
-}
+} */
 
