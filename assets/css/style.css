@@ -15,7 +15,7 @@ body div div a {
     justify-content: flex-end;
     align-items: center;
     font-weight: 800;
-    font-size: xx-large;
+    font-size: xxx-large;
     color:gold;
     height: 360px;
     margin: 0;
@@ -42,6 +42,13 @@ body div div a {
     background-color: var(--trim);
 }
 
+.cardhead2 {
+    position: absolute;
+    display: flex;
+    bottom: 10%;
+    right: 2.5%;
+    background-color: var(--border);
+}
 /* created pseudo properties to add box shadows and highlight cards as the mouse hovers */
 .shadowBox:hover {
     box-shadow: 10px 5px 5px var(--trim);
